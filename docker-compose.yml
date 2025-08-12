@@ -6,13 +6,13 @@ services:
     depends_on:
       - redis
     environment:
-      - TZ=Europe/Berlin
+      - TZ=America/New_York
       - SECRET=longstring
       - REDIS_URL=redis://redis:6379
     volumes:
-      - ./db:/yamtrack/db
+      - /mnt/Pixter/Ubuntu/Yamtrack/db:/yamtrack/db
     ports:
-      - "8000:8000"
+      - "8946:8000"
 
   redis:
     container_name: yamtrack-redis
