@@ -10,7 +10,7 @@ services:
       - SECRET=longstring
       - REDIS_URL=redis://redis:6379
     volumes:
-      - /mnt/Pixter/Ubuntu/Yamtrack/db:/yamtrack/db
+      - /mnt/Pixter-NFS/Ubuntu/Yamtrack/db:/yamtrack/db
     ports:
       - "8946:8000"
 
